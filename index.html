@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAYA4D</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #0a1a2a 0%, #1a2f3f 50%, #2a4f5f 100%);
+            height: 100vh;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        
+        .container {
+            text-align: center;
+            background: linear-gradient(135deg, rgba(10, 26, 42, 0.9), rgba(26, 47, 63, 0.8), rgba(42, 79, 95, 0.9));
+            backdrop-filter: blur(15px);
+            border-radius: 20px;
+            padding: 2.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            max-width: 500px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+        
+        .logo {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            letter-spacing: 2px;
+            text-shadow: 
+                2px 2px 0px #333,
+                4px 4px 0px #666,
+                6px 6px 10px rgba(0,0,0,0.8);
+        }
+        
+        .logo .saya {
+            color: #ffffff;
+        }
+        
+        .logo .four-d {
+            color: #4db8ff;
+        }
+        
+        .tagline {
+            font-size: 1rem;
+            color: #ffeb3b;
+            margin-bottom: 1.5rem;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+        
+        .description {
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+            opacity: 0.95;
+        }
+        
+        .support-text {
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+            line-height: 1.5;
+            opacity: 0.9;
+            color: #e0e0e0;
+        }
+        
+        .chat-btn {
+            background: linear-gradient(45deg, #ff6b35, #f7931e);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(255, 107, 53, 0.4);
+        }
+        
+        .chat-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(255, 107, 53, 0.6);
+        }
+        
+        .footer {
+            font-size: 0.7rem;
+            margin-top: 1.5rem;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <span class="saya">SAYA</span><span class="four-d">4D</span>
+        </div>
+        <div class="tagline">Situs Slot • Casino • Sport • Togel Terpercaya</div>
+        
+        <div class="description">
+            Bergabunglah dengan ribuan pemain yang telah merasakan sensasi menang besar di SAYA4D. Dapatkan akses eksklusif ke game-game terbaru dari provider ternama dunia dengan bonus melimpah dan cashback harian yang menguntungkan.
+        </div>
+        
+        <div class="support-text">
+            Butuh bantuan atau informasi lebih lanjut tentang promo terbaru SAYA4D? Tim support kami yang berpengalaman siap memberikan solusi terbaik untuk segala kebutuhan gaming Anda. Hubungi kami sekarang juga!
+        </div>
+        
+        <button class="chat-btn" onclick="openChat()">💬 Live Chat Support</button>
+        
+        <div class="footer">
+            ⭐ Situs Terpercaya • 🔒 Aman & Legal • 💰 Withdraw Instan
+        </div>
+    </div>
+
+    <!-- Begin of Chaport Live Chat code -->
+    <script type="text/javascript">
+    (function(w,d,v3){
+    w.chaportConfig = {
+    appId : '67231234b5083068a7d30e81'
+    };
+
+    if(w.chaport)return;v3=w.chaport={};v3._q=[];v3._l={};v3.q=function(){v3._q.push(arguments)};v3.on=function(e,fn){if(!v3._l[e])v3._l[e]=[];v3._l[e].push(fn)};var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://app.chaport.com/javascripts/insert.js';var ss=d.getElementsByTagName('script')[0];ss.parentNode.insertBefore(s,ss)})(window, document);
+    </script>
+    <!-- End of Chaport Live Chat code -->
+
+    <script>
+        function openChat() {
+            if (window.chaport && window.chaport.q) {
+                window.chaport.q('open');
+            }
+        }
+    </script>
+</body>
+</html>
