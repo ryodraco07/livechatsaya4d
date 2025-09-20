@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEKUN4D</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1a4a3a 0%, #2d5a4a 50%, #0f2f2f 100%);
+            height: 100vh;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        
+        .container {
+            text-align: center;
+            background: linear-gradient(135deg, rgba(26, 74, 58, 0.9), rgba(45, 90, 74, 0.8), rgba(15, 47, 47, 0.9));
+            backdrop-filter: blur(15px);
+            border-radius: 20px;
+            padding: 2.5rem;
+            border: 1px solid rgba(127, 216, 90, 0.3);
+            max-width: 500px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        .logo {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #7fd85a;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            letter-spacing: 2px;
+        }
+        
+        .tagline {
+            font-size: 1rem;
+            color: #ffd700;
+            margin-bottom: 1.5rem;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+        
+        .description {
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+            opacity: 0.95;
+        }
+        
+        .support-text {
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+            line-height: 1.5;
+            opacity: 0.9;
+            color: #e0e0e0;
+        }
+        
+        .chat-btn {
+            background: linear-gradient(45deg, #7fd85a, #5cb83a);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(127, 216, 90, 0.4);
+        }
+        
+        .chat-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(127, 216, 90, 0.6);
+        }
+        
+        .footer {
+            font-size: 0.7rem;
+            margin-top: 1.5rem;
+            opacity: 0.6;
+        }
+
+        .container-menu-icon {
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid rgba(127, 216, 90, 0.2);
+            border-radius: 10px;
+            background: rgba(26, 74, 58, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">TEKUN4D 🎰 </div>
+        <div class="tagline">Situs SLOT Resmi dan berlisensi di Indonesia</div>
+        
+        <div class="description">
+            Platform judi online terpercaya dengan sistem keamanan tingkat bank dan pembayaran tercepat di Indonesia. Nikmati permainan fairplay dengan RTP tertinggi dan jackpot maxwin setiap hari.
+        </div>
+        
+        <div class="container-menu-icon">
+            <!-- Download button akan diinjeksi di sini -->
+        </div>
+        
+        <div class="support-text">
+            Jika ada keluhan, komplain, masukan, atau pertanyaan seputar TEKUN4D, silahkan hubungi live chat kami. Tim customer service profesional siap membantu Anda 24/7.
+        </div>
+        
+        <button class="chat-btn" onclick="openChat()">💬 Live Chat Support</button>
+        
+        <div class="footer">
+            ⭐ Situs Terpercaya • 🔒 Aman & Legal • 💰 Withdraw Instan
+        </div>
+    </div>
+
+    <!-- Begin of Chaport Live Chat code -->
+    <script type="text/javascript">
+    (function(w,d,v3){
+    w.chaportConfig = {
+    appId : '67231234b5083068a7d30e81'
+    };
+
+    if(w.chaport)return;v3=w.chaport={};v3._q=[];v3._l={};v3.q=function(){v3._q.push(arguments)};v3.on=function(e,fn){if(!v3._l[e])v3._l[e]=[];v3._l[e].push(fn)};var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://app.chaport.com/javascripts/insert.js';var ss=d.getElementsByTagName('script')[0];ss.parentNode.insertBefore(s,ss)})(window, document);
+    </script>
+    <!-- End of Chaport Live Chat code -->
+
+    <script>
+        function openChat() {
+            if (window.chaport && window.chaport.q) {
+                window.chaport.q('open');
+            }
+        }
+    </script>
+
+    <!-- Green Shimmer Download Button Script -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Fungsi untuk inject tombol download dengan styling inline
+        function injectDownloadButton() {
+            // Cari div dengan class "container-menu-icon"  
+            const containerMenuDiv = document.querySelector('.container-menu-icon');
+            
+            if (containerMenuDiv && !document.querySelector('#download-btn-TEKUN4D')) {
+                // Buat tombol dengan styling inline untuk menghindari konflik CSS
+                const downloadButton = document.createElement('a');
+                downloadButton.id = 'download-btn-TEKUN4D';
+                downloadButton.href = 'https://seolt.pro/oknumapp';
+                downloadButton.target = '_blank';
+                downloadButton.textContent = 'DOWNLOAD APLIKASI SUPER TEKUN4D!';
+                
+                // Variable untuk track status klik
+                let isClicked = false;
+                
+                // Styling inline dengan background hijau gelap sesuai tema situs
+                downloadButton.style.cssText = `
+                    position: relative;
+                    display: block;
+                    width: 300px;
+                    margin: 10px auto;
+                    padding: 12px 20px;
+                    background: linear-gradient(135deg, #1a4a3a, #2d5a4a, #3d6b5a, #4d7c6a, #2d5a4a, #1a4a3a, #0f2f2f, #1a4a3a, #2d5a4a, #3d6b5a, #4d7c6a);
+                    background-size: 300% 300%;
+                    color: #ffffff !important;
+                    text-decoration: none;
+                    font-weight: bold;
+                    font-size: 14px;
+                    border-radius: 25px;
+                    text-align: center;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    box-shadow: 0 4px 15px rgba(26,74,58,0.5);
+                    transition: all 0.3s ease;
+                    overflow: hidden;
+                    cursor: pointer;
+                    border: 1px solid #1a4a3a;
+                    z-index: 1;
+                    animation: btnShimmer 2s infinite;
+                `;
+                
+                // Tambahkan keyframe animation secara dinamis dengan warna hijau gelap
+                if (!document.querySelector('#btn-shimmer-keyframes')) {
+                    const styleSheet = document.createElement('style');
+                    styleSheet.id = 'btn-shimmer-keyframes';
+                    styleSheet.textContent = `
+                        @keyframes btnShimmer {
+                            0% { background-position: 0% 50%; }
+                            50% { background-position: 100% 50%; }
+                            100% { background-position: 0% 50%; }
+                        }
+                    `;
+                    document.head.appendChild(styleSheet);
+                }
+                
+                // Event listeners dengan efek hover hijau gelap (hanya jika belum diklik)
+                downloadButton.addEventListener('mouseenter', function() {
+                    if (!isClicked) {
+                        this.style.transform = 'translateY(-3px)';
+                        this.style.boxShadow = '0 0 40px rgba(26, 74, 58, 0.8), 0 0 80px rgba(45, 90, 74, 0.6), inset 0 0 40px rgba(127, 216, 90, 0.2)';
+                        this.style.background = 'linear-gradient(45deg, #2d5a4a, #3d6b5a, #4d7c6a, #1a4a3a, #0f2f2f, #2d5a4a)';
+                    }
+                });
+                
+                downloadButton.addEventListener('mouseleave', function() {
+                    if (!isClicked) {
+                        this.style.transform = 'translateY(0)';
+                        this.style.boxShadow = '0 4px 15px rgba(26,74,58,0.5)';
+                        this.style.background = 'linear-gradient(135deg, #1a4a3a, #2d5a4a, #3d6b5a, #4d7c6a, #2d5a4a, #1a4a3a, #0f2f2f, #1a4a3a, #2d5a4a, #3d6b5a, #4d7c6a)';
+                    }
+                });
+                
+                downloadButton.addEventListener('click', function(e) {
+                    // Set status diklik menjadi true
+                    isClicked = true;
+                    
+                    // Kembalikan ke posisi dan style original tapi TETAP PERTAHANKAN SHIMMER HIJAU GELAP
+                    this.style.transform = 'translateY(0)';
+                    this.style.background = 'linear-gradient(135deg, #1a4a3a, #2d5a4a, #3d6b5a, #4d7c6a, #2d5a4a, #1a4a3a, #0f2f2f, #1a4a3a, #2d5a4a, #3d6b5a, #4d7c6a)';
+                    this.style.backgroundSize = '300% 300%';
+                    this.style.boxShadow = '0 4px 15px rgba(26,74,58,0.5)';
+                    // PERTAHANKAN SHIMMER ANIMATION
+                    this.style.animation = 'btnShimmer 2s infinite';
+                    
+                    // Efek ripple dengan warna putih transparan (hanya sekali)
+                    const ripple = document.createElement('span');
+                    const rect = this.getBoundingClientRect();
+                    const x = e.clientX - rect.left;
+                    const y = e.clientY - rect.top;
+                    
+                    ripple.style.cssText = `
+                        position: absolute;
+                        border-radius: 50%;
+                        background: rgba(255, 255, 255, 0.5);
+                        transform: scale(0);
+                        animation: rippleEffect 0.6s linear;
+                        left: ${x - 10}px;
+                        top: ${y - 10}px;
+                        width: 20px;
+                        height: 20px;
+                        pointer-events: none;
+                    `;
+                    
+                    // Tambahkan keyframe ripple jika belum ada
+                    if (!document.querySelector('#ripple-keyframes')) {
+                        const rippleStyle = document.createElement('style');
+                        rippleStyle.id = 'ripple-keyframes';
+                        rippleStyle.textContent = `
+                            @keyframes rippleEffect {
+                                to {
+                                    transform: scale(4);
+                                    opacity: 0;
+                                }
+                            }
+                        `;
+                        document.head.appendChild(rippleStyle);
+                    }
+                    
+                    this.appendChild(ripple);
+                    
+                    setTimeout(() => {
+                        if (ripple.parentNode) {
+                            ripple.remove();
+                        }
+                    }, 600);
+                });
+                
+                // Masukkan tombol di dalam container-menu-icon
+                containerMenuDiv.appendChild(downloadButton);
+            }
+        }
+
+        // Coba inject langsung
+        setTimeout(injectDownloadButton, 100);
+        
+        // Observer untuk mendeteksi perubahan DOM
+        const observer = new MutationObserver(() => {
+            if (!document.querySelector('#download-btn-TEKUN4D')) {
+                injectDownloadButton();
+            }
+        });
+        
+        observer.observe(document.body, {
+            childList: true,
+            subtree: true
+        });
+        
+        // Fallback
+        setTimeout(() => {
+            if (!document.querySelector('#download-btn-TEKUN4D')) {
+                injectDownloadButton();
+            }
+        }, 3000);
+    });
+    </script>
+
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"5b0b8e1c920b493fa6314f3ff08e9594","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
